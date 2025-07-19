@@ -1,4 +1,4 @@
-import { GithubIcon, InstagramIcon, LinkedinIcon, MessageCircle } from "lucide-react";
+import { GithubIcon, InstagramIcon, LinkedinIcon} from "lucide-react";
 
 function Contact() {
   return (
