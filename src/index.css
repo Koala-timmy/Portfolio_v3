@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); 
+@import "tailwindcss";
+
+:root{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', system-ui, sans-serif, Arial;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style:disc;
+}
+
+.nav-box ul{
+    list-style: none;
+}
+
+.marginControl{
+    width: 85%;
+    margin-left: auto;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    padding: 5px 25px;
+    border-radius: 0 50px 0 50px;
+    font-size: large;
+    cursor: pointer;
+    transition: border-radius 0.25s ease-in-out;
+}
+
+.btn:hover{
+    border-radius: 50px 0 50px 0;
+}
+
+.txt-underline{
+    position: relative; 
+}
+
+.txt-underline:before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    border-radius: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.txt-underline:hover:before{
+    width: 100%;
+}
+
+.blur{
+    position: absolute;
+    top: 5px; left: 50px;
+    height: 50px;
+    box-shadow: 2px 2px 1000px 60px white;
+}
+
+@layer utilities{
+    .nav-box{
+        @apply flex w-fit h-[100vh] ml-[30%];
+    }
+    .navbar{
+        @apply flex h-100 justify-evenly my-auto items-start;
+    }
+    .flex-left{
+        @apply flex items-start;
+    }
+    .flex-col-left{
+        @apply flex flex-col items-start;
+
+        .heading{
+            @apply text-2xl my-4;
+        }
+        .txt{
+            @apply text-gray-200 mb-3;
+        }
+        .sub-txt{
+            @apply text-gray-500 font-thin text-sm text-right mt-3 pr-10;
+        }
+        .timelineBox{
+            @apply flex justify-between w-[95%] mx-auto;
+
+            .timelineImg{
+                @apply w-80 h-50 content-center rounded-lg object-cover;
+            }
+            .rightBox{
+                @apply flex justify-between items-center
+            }
+        }
+    }
+    .divider{
+        @apply border-l-2 border-solid border-white h-full inline-block mx-10;
+    }
+    .hero-3d-layout {
+        @apply lg:w-[55%] w-full h-full min-h-[50vh] absolute lg:top-0 top-30 right-0;
+    }
+    
+    .contact{
+        @apply min-h-screen flex flex-col justify-center items-center px-4;
+
+        .type{
+            @apply bg-transparent border-b border-gray-400 py-2 focus:outline-none resize-none;
+        }
+    }
+    
+    
+}
