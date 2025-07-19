@@ -1,3 +1,5 @@
+import { GithubIcon, InstagramIcon, LinkedinIcon, MessageCircle } from "lucide-react";
+
 function Contact() {
   return (
     <section
@@ -12,6 +14,17 @@ function Contact() {
             new opportunities, collaborations, or a good chat about web
             development. Let’s connect!
           </p>
+          <div className="flex gap-3 mt-2">
+            <a href="https://www.instagram.com/itztimtim">
+              <InstagramIcon/>  
+            </a>
+            <a href="https://www.linkedin.com/in/timothy-green-276466326">
+              <LinkedinIcon/>
+            </a>
+            <a href="https://github.com/Koala-timmy">
+              <GithubIcon/>
+            </a>
+          </div>
         </div>
         <form 
           action="https://formspree.io/f/mldldvoz"
