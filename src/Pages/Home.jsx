@@ -1,5 +1,5 @@
-import Contact from "../Componants/contact";
-import Footer from "../Componants/footer";
+import Contact from "../Componants/Contact";
+import Footer from "../Componants/Footer";
 import Hero from "../Componants/Hero"
 import TechStack from "../Componants/TechStack";
 import Learning from "../Componants/Timeline";
