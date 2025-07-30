@@ -91,16 +91,16 @@ const techStack = [
 
 const timelineInfo = [
     {
-        title: "DD's Food and Drinks",
-        subTitle: 'A food delivery app',
+        title: "CryptoScope Dashboard",
+        subTitle: 'A Crypto Currency Dashboard',
         info:[
-            "My first responsive app using only css and html to adapt the structure and sizing of the web elements to fit different screen sizes.",
-            "During this I'v learnt the effectiveness of media queries and different css properties that aid responsivity."
+            "A fully responsive crypto currency dashboard displaying data for keeping track of important crypto informtion of different currencies",
+            "During this I'v learnt important precortions when designing an information driven dashboard for any website. Not just structure but also appearance and what is displayed is important as to not overwhelm the user whilst conveying the information."
         ],
-        imgPath: '/images/TimelineImgs/FoodWebsite.png',
-        date: 'April 2024',
-        link: 'https://koala-timmy-itvarsity.github.io/Module-3-Assessment-2/Index.html',
-        tech: "HTML - CSS"
+        imgPath: '/images/TimelineImgs/Crypto_dashboard.png',
+        date: 'July 2025',
+        link: 'https://cryptoscopedashboard.netlify.app/',
+        tech: "HTML - Tailwindcss - JavaScript - Figma - React - Chartjs"
     },
     {
         title: 'Foodie Fanatix',
