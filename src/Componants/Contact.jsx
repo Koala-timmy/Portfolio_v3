@@ -1,11 +1,8 @@
-import { GithubIcon, InstagramIcon, LinkedinIcon} from "lucide-react";
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="marginControl contact text-white"
-    >
+    <section id="contact" className="marginControl contact text-white">
       <div className="max-w-5xl w-full flex flex-col md:flex-row justify-between items-start gap-15">
         <div className="md:w-2/5">
           <h2 className="text-4xl font-semibold mb-6">Let’s get in touch</h2>
@@ -16,19 +13,19 @@ function Contact() {
           </p>
           <div className="flex gap-3 mt-2">
             <a href="https://www.instagram.com/itztimtim">
-              <InstagramIcon/>  
+              <InstagramIcon />
             </a>
             <a href="https://www.linkedin.com/in/timothy-green-276466326">
-              <LinkedinIcon/>
+              <LinkedinIcon />
             </a>
             <a href="https://github.com/Koala-timmy">
-              <GithubIcon/>
+              <GithubIcon />
             </a>
           </div>
         </div>
-        <form 
+        <form
           action="https://formspree.io/f/mldldvoz"
-          method="POST" 
+          method="POST"
           className="md:w-3/5 flex flex-col space-y-6"
         >
           <div className="flex flex-col md:flex-row md:space-x-4">
@@ -51,15 +48,12 @@ function Contact() {
             className="type w-full"
             rows={4}
           ></textarea>
-          <button
-            type="submit"
-            className="btn w-60"
-          >
+          <button type="submit" className="btn w-60">
             Send
           </button>
         </form>
       </div>
-      <hr/>
+      <hr />
     </section>
   );
 }

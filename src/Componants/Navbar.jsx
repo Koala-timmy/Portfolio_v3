@@ -7,59 +7,58 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Navbar() {
   const screenWidth = window.screen.width;
-  const valueLine = (screenWidth * (17/100)) * - 1;
-  const valueX = (screenWidth * (30/100)) * - 1;
+  const valueLine = screenWidth * (17 / 100) * -1;
+  const valueX = screenWidth * (30 / 100) * -1;
 
   console.log(valueX);
   console.log(valueLine);
 
   useGSAP(() => {
-      const tl = gsap.timeline();
+    const tl = gsap.timeline();
 
-      tl.from(".from-right", {
+    tl.from(".from-right", {
       delay: 1,
       x: 80,
       opacity: 0,
       stagger: 0.15,
-      });
+    });
 
-      tl.fromTo(
+    tl.fromTo(
       ".line",
       { height: 0 },
       {
-          height: "100%",
-          duration: 1,
+        height: "100%",
+        duration: 1,
       },
       "<"
-      );
+    );
 
-      tl.add(() => {
-        gsap.to("#shift li", {
-            scrollTrigger: {
-            trigger: "#shift",
-            start: "top top+=200",
-            end: "bottom top",
-            scrub: 1,
-            },
-            x: valueX,
-            ease: "power2.inOut",
-            duration: 2,
-            stagger: -0.1,
-        });
-
-        gsap.to(("#line-shift"), {
-            scrollTrigger: {
-            trigger: "#line-shift",
-            start: "top top+=200",
-            end: "bottom top",
-            scrub: 1
-            },
-            x: valueLine,
-            ease: "power2.inOut",
-            duration: 2
-        })
+    tl.add(() => {
+      gsap.to("#shift li", {
+        scrollTrigger: {
+          trigger: "#shift",
+          start: "top top+=200",
+          end: "bottom top",
+          scrub: 1,
+        },
+        x: valueX,
+        ease: "power2.inOut",
+        duration: 2,
+        stagger: -0.1,
       });
 
+      gsap.to("#line-shift", {
+        scrollTrigger: {
+          trigger: "#line-shift",
+          start: "top top+=200",
+          end: "bottom top",
+          scrub: 1,
+        },
+        x: valueLine,
+        ease: "power2.inOut",
+        duration: 2,
+      });
+    });
   }, []);
 
   const smoothScroll = (e, link) => {
@@ -69,9 +68,9 @@ export default function Navbar() {
     if (target) {
       gsap.to(window, {
         duration: 1,
-        scrollTo: { 
-          y: target, 
-          offsetY: 50 
+        scrollTo: {
+          y: target,
+          offsetY: 50,
         },
         ease: "power2.inOut",
       });
@@ -85,8 +84,8 @@ export default function Navbar() {
         <div className="flex-col-left justify-evenly h-full">
           {navLinks.map(({ name, link }) => (
             <li key={name} className="from-right">
-              <a 
-                href={link} 
+              <a
+                href={link}
                 className="txt-underline"
                 onClick={(e) => smoothScroll(e, link)}
               >

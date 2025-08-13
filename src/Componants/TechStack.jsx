@@ -49,13 +49,13 @@ export default function TechStack() {
         "<"
       )
       .fromTo(
-        (".arrow"),
+        ".arrow",
         {
-            opacity: 0
+          opacity: 0,
         },
         {
-            duration: 2.5,
-            opacity: 1
+          duration: 2.5,
+          opacity: 1,
         }
       );
   }, []);
@@ -64,7 +64,10 @@ export default function TechStack() {
   const bottomIcons = techStack.slice(4, 8);
 
   return (
-    <section id="techStack" className="flex flex-col items-center justify-center py-20 bg-black text-white overflow-hidden min-h-[100vh]">
+    <section
+      id="techStack"
+      className="flex flex-col items-center justify-center py-20 bg-black text-white overflow-hidden min-h-[100vh]"
+    >
       <div className="relative w-full max-w-4xl">
         <div className="flex justify-end mb-10 ml-auto pr-10 gap-30 w-8/10">
           {topIcons.map((icon, index) => (
@@ -73,7 +76,11 @@ export default function TechStack() {
               ref={(el) => (topIconsRef.current[index] = el)}
               className="flex flex-col items-center opacity-0"
             >
-              <img src={icon.imgPath} alt={icon.name} className="w-16 h-16 mb-2" />
+              <img
+                src={icon.imgPath}
+                alt={icon.name}
+                className="w-16 h-16 mb-2"
+              />
               <span>{icon.name}</span>
             </div>
           ))}
@@ -84,7 +91,7 @@ export default function TechStack() {
             ref={lineRef}
             className="h-0.5 bg-white w-full origin-left scale-x-0"
           ></div>
-          <ArrowRight className="arrow"/>
+          <ArrowRight className="arrow" />
         </div>
         <div className="flex justify-end mb-10 ml-auto pr-10 gap-30 w-8/10">
           {bottomIcons.map((icon, index) => (
@@ -93,7 +100,11 @@ export default function TechStack() {
               ref={(el) => (bottomIconsRef.current[index] = el)}
               className="flex flex-col items-center opacity-0"
             >
-              <img src={icon.imgPath} alt={icon.name} className="w-16 h-16 mb-2" />
+              <img
+                src={icon.imgPath}
+                alt={icon.name}
+                className="w-16 h-16 mb-2"
+              />
               <span>{icon.name}</span>
             </div>
           ))}

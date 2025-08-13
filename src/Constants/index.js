@@ -1,137 +1,115 @@
 const navLinks = [
-    {
-        name: 'Work',
-        link: '#work'
-    },
-    {
-        name: 'Timeline',
-        link: '#timeline'
-    },
-    {
-        name: 'Tech Stack',
-        link: '#techStack'
-    },
-    {
-        name: 'Hire me',
-        link: '#contact'
-    },
+  {
+    name: "Work",
+    link: "#work",
+  },
+  {
+    name: "Timeline",
+    link: "#timeline",
+  },
+  {
+    name: "Tech Stack",
+    link: "#techStack",
+  },
+  {
+    name: "Hire me",
+    link: "#contact",
+  },
 ];
 
-
 const projectInfo = [
-    {
-        title: "Block Busters",
-        desc: "Block-Busters is a Cape Town-based company offering professional drain and sewer cleaning, pipe repairs, and trenchless solutions for residential and commercial properties.",
-        tech: [
-            "React",
-            "Tailwindcss",
-            "Gsap",
-            "Figma"
-        ],
-        date:"2025/06/02"
-    },
-    {
-        title: "Leak Busters",
-        desc: "Leak‑Busters is a Cape Town specialist in non‑invasive water leak detection and repair, using advanced tools like thermal imaging, tracer gas, and acoustic testing to pinpoint leaks and carry out efficient fixes for homes and businesses",
-        tech: [
-            "React",
-            "Tailwindcss",
-            "Figma"
-        ],
-        date:"2025/06/23"
-    },
-    {
-        title: "WDS",
-        desc: "WDS Cape Town is a specialist in pipe rehabilitation, drain cleaning, CCTV inspection, and utility location services, offering trenchless pipe relining and advanced diagnostics for residential, commercial, and industrial clients.",
-        tech: [
-            "React",
-            "Tailwindcss",
-            "Gsap",
-            "Figma"
-        ],
-        date:"2025/07/02"
-    }
-]
+  {
+    title: "Block Busters",
+    desc: "Block-Busters is a Cape Town-based company offering professional drain and sewer cleaning, pipe repairs, and trenchless solutions for residential and commercial properties.",
+    tech: ["React", "Tailwindcss", "Gsap", "Figma"],
+    date: "2025/06/02",
+  },
+  {
+    title: "Leak Busters",
+    desc: "Leak‑Busters is a Cape Town specialist in non‑invasive water leak detection and repair, using advanced tools like thermal imaging, tracer gas, and acoustic testing to pinpoint leaks and carry out efficient fixes for homes and businesses",
+    tech: ["React", "Tailwindcss", "Figma"],
+    date: "2025/06/23",
+  },
+  {
+    title: "WDS",
+    desc: "WDS Cape Town is a specialist in pipe rehabilitation, drain cleaning, CCTV inspection, and utility location services, offering trenchless pipe relining and advanced diagnostics for residential, commercial, and industrial clients.",
+    tech: ["React", "Tailwindcss", "Gsap", "Figma"],
+    date: "2025/07/02",
+  },
+];
 
 const techStack = [
-    {
-        name:'Tailwindcss',
-        imgPath: '/images/Icons/tailwindcss.png'
-    },
-    {
-        name:'CSS',
-        imgPath: '/images/Icons/css.png'
-    },
-    {
-        name:'Figma',
-        imgPath: '/images/Icons/figma.png'
-    },
-    {
-        name:'Github',
-        imgPath: '/images/Icons/github.png'
-    },
-    {
-        name:'Gsap',
-        imgPath: '/images/Icons/gsap.png'
-    },
-    {
-        name:'HTML',
-        imgPath: '/images/Icons/html.png'
-    },
-    {
-        name:'Java Script',
-        imgPath: '/images/Icons/javascript.png'
-    },
-    {
-        name:'React',
-        imgPath: '/images/Icons/react.png'
-    },
-
-]
+  {
+    name: "Tailwindcss",
+    imgPath: "/images/Icons/tailwindcss.png",
+  },
+  {
+    name: "CSS",
+    imgPath: "/images/Icons/css.png",
+  },
+  {
+    name: "Figma",
+    imgPath: "/images/Icons/figma.png",
+  },
+  {
+    name: "Github",
+    imgPath: "/images/Icons/github.png",
+  },
+  {
+    name: "Gsap",
+    imgPath: "/images/Icons/gsap.png",
+  },
+  {
+    name: "HTML",
+    imgPath: "/images/Icons/html.png",
+  },
+  {
+    name: "Java Script",
+    imgPath: "/images/Icons/javascript.png",
+  },
+  {
+    name: "React",
+    imgPath: "/images/Icons/react.png",
+  },
+];
 
 const timelineInfo = [
-    {
-        title: "CryptoScope Dashboard",
-        subTitle: 'A Crypto Currency Dashboard',
-        info:[
-            "A fully responsive crypto currency dashboard displaying data for keeping track of important crypto informtion of different currencies",
-            "During this I'v learnt important precortions when designing an information driven dashboard for any website. Not just structure but also appearance and what is displayed is important as to not overwhelm the user whilst conveying the information."
-        ],
-        imgPath: '/images/TimelineImgs/Crypto_dashboard.png',
-        date: 'July 2025',
-        link: 'https://cryptoscopedashboard.netlify.app/',
-        tech: "HTML - Tailwindcss - JavaScript - Figma - React - Chartjs"
-    },
-    {
-        title: 'Foodie Fanatix',
-        subTitle: 'Food blog website',
-        info:[
-            "Food blog website for displaying food in social-media environment",
-            "During this I learned valuable site design priciples and methods aswell as figma - a free UI design interface"
-        ],
-        imgPath: '/images/TimelineImgs/FoodieFanatics.png',
-        date: 'August 2024',
-        link: 'https://koala-timmy-itvarsity.github.io/Module-11-Assessment-2/',
-        tech: "HTML - CSS - Figma"
-    },
-    {
-        title: 'Auto4Sale',
-        subTitle: 'Car Dealership Website',
-        info:[
-            "This website served as a means to practice and sharpen design and html element structure skills.",
-            "I improved improved on my use of different CSS properties adn how I structure my div elements as well as where certain elements would work best."
-        ],
-        imgPath: '/images/TimelineImgs/CarDealership.png',
-        date: 'June 2024',
-        link: 'https://koala-timmy-itvarsity.github.io/Module-6-Assessment-2/Index',
-        tech: "Wordpress - HTML - CSS - Figma"
-    }
-]
+  {
+    title: "CryptoScope Dashboard",
+    subTitle: "A Crypto Currency Dashboard",
+    info: [
+      "A fully responsive crypto currency dashboard displaying data for keeping track of important crypto informtion of different currencies",
+      "During this I'v learnt important precortions when designing an information driven dashboard for any website. Not just structure but also appearance and what is displayed is important as to not overwhelm the user whilst conveying the information.",
+    ],
+    imgPath: "/images/TimelineImgs/Crypto_dashboard.jpeg",
+    date: "July 2025",
+    link: "https://cryptoscopedashboard.netlify.app/",
+    tech: "HTML - Tailwindcss - JavaScript - Figma - React - Chartjs",
+  },
+  {
+    title: "Foodie Fanatix",
+    subTitle: "Food blog website",
+    info: [
+      "Food blog website for displaying food in social-media environment",
+      "During this I learned valuable site design priciples and methods aswell as figma - a free UI design interface",
+    ],
+    imgPath: "/images/TimelineImgs/FoodieFanatics.jpeg",
+    date: "August 2024",
+    link: "https://koala-timmy-itvarsity.github.io/Module-11-Assessment-2/",
+    tech: "HTML - CSS - Figma",
+  },
+  {
+    title: "Auto4Sale",
+    subTitle: "Car Dealership Website",
+    info: [
+      "This website served as a means to practice and sharpen design and html element structure skills.",
+      "I improved improved on my use of different CSS properties adn how I structure my div elements as well as where certain elements would work best.",
+    ],
+    imgPath: "/images/TimelineImgs/CarDealership.jpeg",
+    date: "June 2024",
+    link: "https://koala-timmy-itvarsity.github.io/Module-6-Assessment-2/Index",
+    tech: "Wordpress - HTML - CSS - Figma",
+  },
+];
 
-export{
-    timelineInfo,
-    techStack,
-    navLinks,
-    projectInfo
-}
-
+export { timelineInfo, techStack, navLinks, projectInfo };
