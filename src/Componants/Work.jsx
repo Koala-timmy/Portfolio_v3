@@ -55,6 +55,7 @@ function Work() {
             src="/images/project1.jpeg"
             alt="Project-1 Image"
             className="border-1 border-white rounded-xl"
+            loading="lazy"
           />
           <div>
             <p className="heading">Block Busters</p>
@@ -78,6 +79,7 @@ function Work() {
               src="/images/project2.jpeg"
               alt="Project-2 Image"
               className="border-1 border-white rounded-xl"
+              loading="lazy"
             />
             <div>
               <p className="heading">Leak Busters</p>
@@ -94,6 +96,7 @@ function Work() {
               src="/images/project3.jpeg"
               alt="Project-3 Image"
               className="border-1 border-white rounded-xl"
+              loading="lazy"
             />
             <div>
               <p className="heading">Water & Drainage Services</p>

@@ -16,6 +16,7 @@ export default function Learning() {
                 src={imgPath}
                 alt="Image"
                 className="timelineImg mx-2 my-5"
+                loading="lazy"
               />
               <div className="w-6/10 content-center px-5">
                 <div className="rightBox">
