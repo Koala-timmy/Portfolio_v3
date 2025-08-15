@@ -1,4 +1,4 @@
-import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 function Contact() {
   return (
@@ -12,14 +12,21 @@ function Contact() {
             development. Let’s connect!
           </p>
           <div className="flex gap-3 mt-2">
-            <a href="https://www.instagram.com/itztimtim">
-              <InstagramIcon />
+            <a
+              href="https://www.instagram.com/itztimtim"
+              target="_blank"
+              className="hover:cursor-pointer"
+            >
+              <Instagram />
             </a>
-            <a href="https://www.linkedin.com/in/timothy-green-276466326">
-              <LinkedinIcon />
+            <a
+              href="https://www.linkedin.com/in/timothy-green-276466326"
+              target="_blank"
+            >
+              <Linkedin />
             </a>
-            <a href="https://github.com/Koala-timmy">
-              <GithubIcon />
+            <a href="https://github.com/Koala-timmy" target="_blank">
+              <Github />
             </a>
           </div>
         </div>

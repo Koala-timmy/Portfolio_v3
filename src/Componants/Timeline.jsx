@@ -24,6 +24,7 @@ export default function Learning() {
                   <a
                     href={link}
                     className="flex items-center gap-1 hover:text-gray-400"
+                    target="_blank"
                   >
                     Visit Site
                     <ArrowRight size={20} />
